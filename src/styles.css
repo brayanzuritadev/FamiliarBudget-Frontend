@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: my-poppins;
+    src: url(./assets/fonts/poppins/Poppins-Regular.ttf);
+}
+
+:root {
+    --light-green-color: #4bf3b3;
+}
+
+:root {
+    --dark-green-color: #279574;
+}
+
+:root {
+    --pink-color: #fcd5d8;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+
+.left{
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: 100vh;
+}
+
+.header-1{
+    font-family: my-poppins;
+    text-shadow: #00d19d;
+    text-decoration: solid;
+    padding-bottom: 50px;
+}
+
+.right input{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    font-family: my-poppins;
+}
+
+.mb-3 .btn-primary{
+    width: 100%;
+    background-color: #279574;
+    border: none;
+    font-family: my-poppins;
+}
+.mb-3 .btn-primary:hover{
+    width: 100%;
+    background-color: #2fa175;
+    border: none;
+}
+
+/*div- combobox - input family code - Role*/
+.div-rf{
+    align-items: center;
+    width: 65%;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.div-rf input{
+    width: 55%;
+    margin-left: 15px;
+}
+
+/*combobox1 - Role*/
+.right .form-select{
+    font-family: my-poppins;
+    width: 45%;
+    height: 35px;
+}
+
+.mb-3{
+    align-items: center;
+    width: 65%;
+}
+
+.left img{
+    height: 938px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.label-1{
+    font-family: my-poppins;
+    text-decoration: none;
+}
+
+.label-1 a{
+    text-decoration: none;
+}
+
+.split-screem{
+    display: flex;
+}

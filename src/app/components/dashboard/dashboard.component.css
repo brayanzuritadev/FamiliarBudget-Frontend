@@ -1,0 +1,51 @@
+.wrapper-dashboard{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offcanvas{
+  width: 250px;
+}
+
+.fixed-top{
+  width: 32px;
+}
+
+.icon-label{
+  cursor: pointer;
+}
+
+.menu {
+  height: 32px;
+}
+
+.mb-3{
+  width: 500px;
+}
+
+.div-top{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+ 
+  height: 25%;
+  width: 60%;
+}
+.div-center{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 25%;
+}
+.div-bottom{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+  height: 25%;
+  width: 60%;
+}
