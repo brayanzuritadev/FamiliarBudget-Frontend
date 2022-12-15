@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CentralDashboardComponent } from './components/central-dashboard/central-dashboard.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 
 //components
 import { LoginComponent } from './components/login/login.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { UserDetailComponent } from './components/user-detail/user-detail.component';
+
 
 const routes: Routes = [
   {
@@ -23,16 +24,16 @@ const routes: Routes = [
     component: LoginComponent
   },
   {
+    path:'users/:id',
+    component: DashboardComponent
+  },
+  {
     path: 'signIn', 
     component: SignInComponent
   },
   {
-    path: 'dashboard', 
+    path: 'dashboard/users', 
     component: DashboardComponent
-  },
-  {
-    path: 'dashboard/1', 
-    component: CentralDashboardComponent
   },
   {
     path: '**', 

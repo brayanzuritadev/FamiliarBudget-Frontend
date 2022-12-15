@@ -1,29 +1,30 @@
-.container-login-home-registrar{
-    /*background-color: var(--light-green-color);*/
+.div-img {
     width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 100px;
+    height: 600px;
+    background: #f1d7ea;
+    background: linear-gradient(#f8f8f3be, #e09d8557),url(../../../assets/img/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
 }
-
-a{
+.texts-header{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 50%;
+    height: 80vh;
+    text-align: center;
     font-family: my-poppins;
-    text-decoration: none;
-    margin: 15px;
-    margin-right: 15px;
-    padding-left: 25px;
-    text-align: center;
-    color: var(--dark-green-color);
-}
-
-a:hover{
-    color: var(--light-green-color);
 }
 
 h1{
-    color: var(--dark-green-color);
-    margin: 10px;
     padding: 10px;
-    font-family: my-poppins;
+    color: var(--dark-green-color);
 }
 
+h3{
+    padding: 16px;
+    color: var(--dark-green-color);
+}

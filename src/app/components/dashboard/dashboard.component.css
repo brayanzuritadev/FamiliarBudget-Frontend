@@ -1,51 +1,83 @@
-.wrapper-dashboard{
-    height: 100vh;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: column;
+
+.right-dashboard{
+  width: 100%;
 }
 
-.offcanvas{
-  width: 250px;
-}
-
-.fixed-top{
-  width: 32px;
-}
-
-.icon-label{
-  cursor: pointer;
-}
-
-.menu {
-  height: 32px;
-}
-
-.mb-3{
-  width: 500px;
-}
-
-.div-top{
-  justify-content: center;
+.div-search{
   display: flex;
-  align-items: center;
- 
-  height: 25%;
-  width: 60%;
-}
-.div-center{
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 60%;
-  height: 25%;
-}
-.div-bottom{
-  justify-content: center;
-  display: flex;
+  height: 15%;
+  text-align: center;
   align-items: center;
   
+}
+.div-central{
+  display: flex;
+  flex-direction: column;
   height: 25%;
-  width: 60%;
+  text-align: center;
+  align-items: center;
+  text-align: left;
+}
+#family-code-h{
+  width: 50%;
+  justify-content: start;
+  text-align: start;
+  padding: 16px;
+  font-family: my-poppins;
+  color: var(--dark-green-color);
+}
+
+#family-code{
+  width: 50%;
+  background-color: var(--pink-color);
+  border-radius: 10px;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: my-poppins;
+  color: var(--dark-green-color);
+}
+
+.right-dashboard{
+  height: 100%;
+}
+.div-botton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: my-poppins;
+  flex-direction: column;
+  width: 90%;
+  height: 50%;
+  text-align: right;
+}
+div{
+  text-align: center;
+  padding: 10px;
+}
+h6{
+  font-size: 20px;
+  padding: 2px;
+}
+
+h5{
+  margin: 10px;
+}
+.div-headers{
+  display: flex;
+}
+
+.left-dashboard{
+  width: 260px;
+}
+.dashboard{
+  display: flex;
+  height: 100%;
+  background: linear-gradient(#ffffe6da, #e09d8533);
+}
+
+.btn-success{
+  margin: 0px 10px;
 }

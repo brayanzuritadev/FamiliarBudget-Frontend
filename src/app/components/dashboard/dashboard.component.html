@@ -1,57 +1,56 @@
-<div class="wrapper-dashboard">
-  <nav class="navbar bg-white fixed-top" id="nav">
-    <div class="container-fluid">
-      <div class="div-menu">
-        <label
-          class="icon-label"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <img class="menu" src="../../../assets/img/menu.png" alt="menu"
-        /></label>
+
+<div class="dashboard">
+
+  <div class="left-dashboard">
+  </div>
+
+  <div class="right-dashboard">
+    <div class="div-search">
+    <app-nav-dashboard></app-nav-dashboard>
+    </div>
+
+    <div class="div-central">
+      <div id="family-code-h">
+        <h3>Código de Familia</h3>
       </div>
-
-      <div
-        class="offcanvas offcanvas-start"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-          </ul>
-        </div>
+      <div id="family-code">
+        <h4></h4>
       </div>
     </div>
-  </nav>
 
-  <div class="div-top">
-    <div class="mb-3">
-      <input
-        type="text"
-        class="form-control"
-        id="firstName"
-        placeholder="Buscar"
-      />
+    <div class="div-botton">
+      <h2>Usuarios</h2> 
+      <table class="table" >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Email</th>
+              <th scope="col">Role</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="
+          let data of users | paginate: { itemsPerPage: 5, currentPage: pages }
+          ">
+            <tr>
+              <th scope="row">1</th>
+              <td>{{ data.firstName }}</td>
+              <td>{{ data.lastName }}</td>
+              <td>{{ data.email }}</td>
+              <td>{{ data.roleName }}</td>
+              <td>
+                <button type="button" class="btn btn-secondary" ><img src="../../../assets/img/user-solid.svg" height ="15" width="15" alt="editar"></button>
+                <app-user-detail routerLink="/users/{{data.id}}"></app-user-detail>
+                <button type="button" class="btn btn-danger" (click)="deleteUser(data.id)"><img src="../../../assets/img/xmark-solid.svg" height ="15" width="15" alt="editar"></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      <div class="div-pager">
+        <pagination-controls (pageChange)="pages = $event"></pagination-controls>
+      </div>
     </div>
-  </div>
-  <div class="div-center">
-    <app-central-dashboard></app-central-dashboard>
-  </div>
-  <div class="div-bottom">
-    
+
   </div>
 </div>

@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { SpinnerComponent } from './components/spinner/spinner.component';
 import {ToastrModule} from 'ngx-toastr'
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { CentralDashboardComponent } from './components/central-dashboard/central-dashboard.component';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { NavDashboardComponent } from './components/shared/nav-dashboard/nav-dashboard.component';
+import { DashboardUsersComponent } from './components/dashboard-users/dashboard-users.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { UserEditarComponent } from './components/user-editar/user-editar.component';
+import { UserDetailComponent } from './components/user-detail/user-detail.component'
 
 
 @NgModule({
@@ -22,12 +26,17 @@ import { HomeComponent } from './components/home/home.component';
     LoginComponent,
     SignInComponent,
     DashboardComponent,
-    SpinnerComponent,
-    CentralDashboardComponent,
     HomeComponent,
+    HeaderComponent,
+    NavDashboardComponent,
+    DashboardUsersComponent,
+    UserEditarComponent,
+    UserDetailComponent,
+  
   ],
   imports: [
     BrowserModule,
+    NgxPaginationModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,

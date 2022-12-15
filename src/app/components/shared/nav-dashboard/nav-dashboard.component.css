@@ -1,0 +1,46 @@
+
+
+.menu {
+  height: 32px;
+}
+
+.btn-menu{
+    margin-left: 37px;
+}
+
+a{
+    margin-left: 40px;
+    padding: 10px;
+    display:block;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: my-poppins;
+    color: var(--dark-green-color);
+}
+
+.offcanvas{
+    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+}
+
+.div-menu{
+    width: 70%;
+    height: 90%;
+}
+
+.div-wrapper-menu{
+    width: 90%;
+    height: 80%;
+    border-right: 2px solid;
+    border-color: rgb(168, 168, 168);
+}
+.div-logout{
+    
+    display: flex;
+    width: 80%;
+    border-top: 2px solid;
+    justify-content: center;
+    border-color: rgb(168, 168, 168);
+}

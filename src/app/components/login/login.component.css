@@ -1,42 +1,9 @@
-/*home bar*/
-/*.container-login-home-registrar{
-    /*background-color: var(--light-green-color);*/
-   /* width: 100%;
-    font-size: 20px;
-    text-align: center;
-    padding: 20px 100px;
-}
-
-a{
-    font-family: my-poppins;
-    text-decoration: none;
-    margin: 15px;
-    margin-right: 15px;
-    padding-left: 25px;
-    text-align: center;
-    color: var(--dark-green-color);
-}
-
-a:hover{
-    color: var(--light-green-color);
-}
-
-h1{
-    color: var(--dark-green-color);
-    font-family: my-poppins;
-}*/
-/*---------*/
-.div-img {
+.right-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
     width: 100%;
-    height: 600px;
-    background: #bc4e9c;
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(113, 45%, 52%, 0.664)), url(../../../assets/img/portada.jpg);*/
-    background: -webkit-linear-gradient(#f9065775, #bc4e9ca9), url(../../../assets/img/portada.jpg);
-    background: linear-gradient(#bc4e9d86, #4a407166),url(../../../assets/img/portada.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+    height: 100vh;
+
 }

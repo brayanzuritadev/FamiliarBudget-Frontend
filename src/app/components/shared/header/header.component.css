@@ -1,0 +1,26 @@
+.home-login-a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--dark-green-color);
+    font-size: 20px;
+}
+
+.home-login-a:hover{
+    color: var(--light-green-color);
+}
+
+.home-login-nav{
+    padding: 34px;
+    position: relative;
+    z-index: 1;
+    float: right;
+    font-size: 18px;
+    font-family: my-poppins;
+}
+
+@media screen and (max-width:660px){
+    .home-login-a{
+        text-decoration: none;
+        display: flex;
+    }
+}

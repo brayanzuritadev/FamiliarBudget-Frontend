@@ -3,42 +3,38 @@
         <img src="../../../assets/img/main.jpg" alt="main">
     </div>
     <div class="right">
-        <div class="container-login-home-registrar">
-            <nav>
-                <a routerLink="/home" >Home</a>
-                <a routerLink="/login">Iniciar sesión</a>
-                <a routerLink="/signIn">Registrar</a>
-            </nav>
-        </div>
-        <div class="right">
+        <app-header></app-header>
+        <div class="right-2">
         <div class="header-1">
             <h1>Familiar Budget</h1>
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" id="firstName" placeholder="Nombre">
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="user[0]" placeholder="Nombre">
         </div>
         <div class="mb-3">
-            <input type="text" class="form-control" id="lastName" placeholder="Apellido">
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="user[1]" placeholder="Apellido">
         </div>
         <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="user[2]" placeholder="name@example.com">
         </div>
         <div class="mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" [(ngModel)]="user[3]" placeholder="Password">
         </div>
         <div class="mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Repita su password">
+            <input type="password" class="form-control" id="floatingPassword" [(ngModel)]="user[4]" placeholder="Repita su password">
         </div>
         <div class="div-rf">
-            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-              <option selected>Seleccione su Rol</option>
+            <select class="form-select" id="floatingSelect" [(ngModel)]="user[5]" aria-label="Floating label select example">
+              <option selected >Seleccione su Rol</option>
               <option value="1">Administrador</option>
               <option value="2">Regular</option>
             </select>
-            <input type="text" class="form-control" id="familyCode" placeholder="Codigo de familia">
+
+            <input type="text" class="form-control" id="familyCode" [(ngModel)]="user[6]" placeholder="Codigo de familia">
+            
         </div>          
         <div class="mb-3">
-            <button class="btn btn-primary" type="button">Registrarse</button>
+            <button class="btn btn-success" (click)="createUser()" type="button">Registrarse</button>
         </div>
         <p class="label-1">Volver a <a routerLink="/login">Login</a></p>
     </div>

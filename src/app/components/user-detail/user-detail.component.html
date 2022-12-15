@@ -1,0 +1,42 @@
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (click)="fetchUser(user.id)">
+  <img src="../../../assets/img/pen-solid.svg" height ="15" width="15" alt="editar">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="mb-3">
+          <input type="text" class="form-control" id="firstName" value="{{user.firstName}}" placeholder="Nombre">
+      </div>
+      <div class="mb-3">
+          <input type="text" class="form-control" id="lastName" value="{{user.lastName}}" placeholder="Apellido">
+      </div>
+      <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1"  value="{{user.email}}" placeholder="name@example.com">
+      </div>
+      <div class="div-rf">
+          <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+            <option selected value="">Seleccione su Rol</option>
+            <option value="1">Administrador</option>
+            <option value="2">Regular</option>
+          </select>
+
+          <input type="text" class="form-control" id="familyCode" placeholder="Codigo de familia" value="{{user.familyCode}}">
+          
+      </div>          
+        <h2>{{user.id}}</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" >Understood</button>
+      </div>
+    </div>
+  </div>
+</div>

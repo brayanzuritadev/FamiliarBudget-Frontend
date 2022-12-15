@@ -1,71 +1,26 @@
-<!--<div class="split-screem">
+<div class="split-screem">
     <div class="left" >
         <img src="../../../assets/img/main.jpg" alt="main">
     </div>
+    
     <div class="right">
-        <div class="container-login-home-registrar">
-            <nav>
-                <a routerLink="/home" >Home</a>
-                <a routerLink="/login">Iniciar sesión</a>
-                <a routerLink="/signIn">Registrar</a>
-            </nav>
-        </div>
-        <div class="right">
-        <div class="header-1">
-            <h1>Familiar Budget</h1>
-        </div>
-        <div class="mb-3">
-            <input type="email" class="form-control" [(ngModel)]="email" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-            <input type="password" class="form-control" [(ngModel)]="password" id="floatingPassword" placeholder="Password">
-        </div>
-        <div class="mb-3">
-            <button class="btn btn-primary" (click)="login()" type="button">Iniciar Sesión</button>
-        </div>
-        <p class="label-1">¿No tienes cuenta? <a routerLink="/signIn">Registrar</a></p>
-    </div>
-    </div>
-</div>/-->
-<div class="div-img">
-    <section class="textos-header">
-        <h1>Potencia tus ventas al menos un 200%</h1>
-        <h2>Con una página web potente</h2>
-    </section>
-    <div class="wave" style="height: 150px; overflow: hidden;"></div>
-</div>
-<main>
-    <section class="contenedor sobre-nosotros">
-        <h2 class="titulo">Nuestro producto</h2>
-        <div class="contenedor-sobre-nosotros">
-            <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
-            <div class="contenido-textos">
-                <h3><span>1</span>Los mejores productos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                    consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                    velit doloribus laboriosam ut.</p>
-                <h3><span>2</span>Los mejores productos</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam eius aspernatur ad
-                    consequuntur aperiam minima sed dicta odit numquam sapiente quam eum, architecto animi pariatur,
-                    velit doloribus laboriosam ut.</p>
+
+        <app-header></app-header>
+        <div class="right-2">
+            <div class="header-1">
+                <h1>Familiar Budget</h1>
             </div>
-        </div>
-    </section>
-</main>
-<footer>
-    <div class="contenedor-footer">
-        <div class="content-foo">
-            <h4>Phone</h4>
-            <p>8296312</p>
-        </div>
-        <div class="content-foo">
-            <h4>Email</h4>
-            <p>8296312</p>
-        </div>
-        <div class="content-foo">
-            <h4>Location</h4>
-            <p>8296312</p>
+            
+            <div class="mb-3">
+                <input type="email" class="form-control" [(ngModel)]="email" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" [(ngModel)]="password" id="floatingPassword" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-success" (click)="login()" type="button">Iniciar Sesión</button>
+            </div>
+            <p class="label-1">¿No tienes cuenta? <a routerLink="/signIn">Registrar</a></p>
         </div>
     </div>
-    <h2 class="titulo-final">&copy; AlexCG Design | Jordan Alexander</h2>
-</footer>
+</div>
