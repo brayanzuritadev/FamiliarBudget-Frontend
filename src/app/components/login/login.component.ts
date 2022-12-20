@@ -35,7 +35,7 @@ export class LoginComponent {
 
     this._userService.login(user).subscribe({
       next: (iresponse) =>{
-        this.router.navigate(['/dashboard/users'])
+        this.router.navigate(['transactions'])
         //obtenemos el token
         localStorage.setItem('token', iresponse.response)
       }
