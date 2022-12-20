@@ -32,6 +32,10 @@ export class SignInComponent {
       return
     }
 
+    if(this.user.length<2){
+      this.toastr.error("debe ingresar todos los datos requeridos");
+    }
+
     const users : Users={
       id:0,
       firstName : this.user[0],
@@ -39,6 +43,7 @@ export class SignInComponent {
       email:this.user[2],
       password: this.user[3],
       roleId: Number(this.user[5]),
+      familyCode: this.user[6]
     }
     
     console.log(users)
@@ -46,7 +51,11 @@ export class SignInComponent {
     this.userService.createUser(users).subscribe({
       
       next: (iresponse) =>{
+        if(users.roleId==1){
         this.router.navigate(['/dashboard/users'])
+        }else{
+          this.router.navigate(['/transactions']);
+        }
         //obtenemos el token
         localStorage.setItem('token', iresponse.response)
       }

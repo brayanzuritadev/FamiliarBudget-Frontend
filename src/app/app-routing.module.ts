@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 //components
 import { LoginComponent } from './components/login/login.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
+import { TransactionsComponent } from './components/transactions/transactions.component';
 import { UserDetailComponent } from './components/user-detail/user-detail.component';
 
 
@@ -18,6 +19,10 @@ const routes: Routes = [
     path:'', 
     redirectTo: 'home', 
     pathMatch: 'full'
+  },
+  {
+    path: 'transactions',
+    component: TransactionsComponent
   },
   {
     path:'login',

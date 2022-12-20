@@ -17,7 +17,8 @@ import { NavDashboardComponent } from './components/shared/nav-dashboard/nav-das
 import { DashboardUsersComponent } from './components/dashboard-users/dashboard-users.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { UserEditarComponent } from './components/user-editar/user-editar.component';
-import { UserDetailComponent } from './components/user-detail/user-detail.component'
+import { UserDetailComponent } from './components/user-detail/user-detail.component';
+import { TransactionsComponent } from './components/transactions/transactions.component'
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
     DashboardUsersComponent,
     UserEditarComponent,
     UserDetailComponent,
+    TransactionsComponent,
   
   ],
   imports: [
