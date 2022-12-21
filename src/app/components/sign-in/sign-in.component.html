@@ -10,15 +10,19 @@
         </div>
         <div class="mb-3">
             <input type="text" class="form-control" id="firstName" [(ngModel)]="user[0]" placeholder="Nombre">
+            <span *ngIf="this.fieldsMssg[0]" style="color: rgb(252, 83, 83); font-size: 15px;">*<b>Nombre</b> no debe estar vacio</span>
         </div>
         <div class="mb-3">
             <input type="text" class="form-control" id="lastName" [(ngModel)]="user[1]" placeholder="Apellido">
+            <span *ngIf="this.fieldsMssg[1]" style="color: rgb(252, 83, 83); font-size: 15px;">*<b>Apellido</b> no debe estar vacio</span>
         </div>
         <div class="mb-3">
             <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="user[2]" placeholder="name@example.com">
+            <span *ngIf="this.fieldsMssg[2]" style="color: rgb(252, 83, 83); font-size: 15px;">*<b>Email</b> no debe estar vacio</span>
         </div>
         <div class="mb-3">
             <input type="password" class="form-control" id="floatingPassword" [(ngModel)]="user[3]" placeholder="Password">
+            <span *ngIf="this.fieldsMssg[3]" style="color: rgb(252, 83, 83); font-size: 15px;">*<b>Password</b> no debe estar vacio</span>
         </div>
         <div class="mb-3">
             <input type="password" class="form-control" id="floatingPassword" [(ngModel)]="user[4]" placeholder="Repita su password">
@@ -29,10 +33,10 @@
               <option value="1">Administrador</option>
               <option value="2">Regular</option>
             </select>
-
             <input type="text" class="form-control" id="familyCode" [(ngModel)]="user[6]" placeholder="Codigo de familia">
-            
-        </div>          
+
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="this.flagRequired"> <b>Atención</b> {{this.errorMessage}}</div>
         <div class="mb-3">
             <button class="btn btn-success" (click)="createUser()" type="button">Registrarse</button>
         </div>
