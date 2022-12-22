@@ -19,7 +19,7 @@ export class SignInComponent {
     ){}
 
   ngOnInit(){}
-  
+
   mostrar : boolean = false;
   showInputFamilyCode(){
       this.mostrar = true
@@ -39,12 +39,13 @@ export class SignInComponent {
       email:this.user[2],
       password: this.user[3],
       roleId: Number(this.user[5]),
+      familyCode: this.user[6],
     }
-    
+
     console.log(users)
 
     this.userService.createUser(users).subscribe({
-      
+
       next: (iresponse) =>{
         this.router.navigate(['/dashboard/users'])
         //obtenemos el token
