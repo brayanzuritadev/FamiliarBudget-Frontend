@@ -37,6 +37,7 @@ parameters {
     steps{
 
     git 'https://github.com/brayanzuritadev/FamiliarBudget-Frontend'
+    sh 'npm install'
 
     }
 
