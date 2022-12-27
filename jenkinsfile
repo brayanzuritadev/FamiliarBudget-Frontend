@@ -1,22 +1,49 @@
-pipeline{
-    agent any
+pipeline {
 
-    tools {
-    nodejs "nodeAngular"
+
+
+agent any
+
+
+
+tools {
+
+nodejs "nodeAngular"
+
+
+
+}
+
+parameters {
+
+
+
+    string (name:'container_name', defaultValue:'Pagina web', description:'Nombre del contenedor')
+
+    string (name:'image_name', defaultValue:'Pagina img', description:'Nombre de la image contenedor')
+
+    string (name:'container_port', defaultValue: '80', description:'Puerto que se  usa')
+
+}
+
+
+
+    stages {
+
+        stage('install')
+
+        {
+
+    steps{
+
+    git 'https://github.com/brayanzuritadev/FamiliarBudget-Frontend'
+
     }
 
-    parameters{
-        string (name:'container_name', defaultValue:'Pagina web', description:'Nombre del contenedor')
-        string (name:'image_name', defaultValue:'Pagina img', description:'Nombre de la image contenedor')
-        string (name:'container_port', defaultValue: '80', description:'Puerto que usa')
-    }
-   
-    stages{
-        stage('install'){
-            steps{
-                git 'https://github.com/brayanzuritadev/FamiliarBudget-Frontend.git'
-                sh 'npm install'
-            }
+//echo 'test jenkins'
+
         }
+
     }
+
 }
